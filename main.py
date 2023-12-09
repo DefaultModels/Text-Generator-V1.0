@@ -9,7 +9,7 @@ def crunch(file):
 		with open(file, "r") as f:
 				text = re.findall(r"\w+(?:'\w+)?|[^\s\w]+", f.read())
 
-				for word in tqdm.tqdm(text, desc="Memorizing \"The Giver\"..."):
+				for word in tqdm.tqdm(text, desc="Memorizing text.txt..."):
 						words.append(word.lower())
 
 				for word in tqdm.tqdm(text, desc="Creating dicts..."):
